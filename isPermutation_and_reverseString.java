@@ -12,6 +12,8 @@ count[Character.getNumericValue(str1.charAt(i))]++;
 LP2: if (letterCounts[Character.getNumericValue(str2_arr[i])] < 0) because if (letterCounts[Character.getNumericValue(str2_arr[i])] > 0) 는 mistakenly executes since 첫째 string땜에 index increment 했잖아. 
 
 i.e. "ddddd" "ddddd" then index of count for d aka. 4 would be 5 then u decrement 1 so becomes 4 so does if statement returns false..
+
+LP3: Strings are immutable. therefore use substring method in reverse recurse
 */
 
  public static boolean isPermutation(String str1, String str2) {
