@@ -10,6 +10,9 @@ Character.getNumericValue(str1.charAt(i))
 count[Character.getNumericValue(str1.charAt(i))]++; 
 
 LP2: if (letterCounts[Character.getNumericValue(str2_arr[i])] < 0) because if (letterCounts[Character.getNumericValue(str2_arr[i])] > 0) 는 mistakenly executes since 첫째 string땜에 index increment 했잖아. 
+U might say, "well what if str2 doesn't contain as many of 1 character as str1. That would mean it's not a permutation
+but it wouldn't be captures by index < 0, right? " Response: no it would, because as a result str2 would have 1 more of a different character
+making index < 0 execute. 
 
 i.e. "ddddd" "ddddd" then index of count for d aka. 4 would be 5 then u decrement 1 so becomes 4 so does if statement returns false..
 
